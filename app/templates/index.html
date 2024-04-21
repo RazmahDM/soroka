@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h2>Именно мы</h2>
+        <h3>Выполняем работы по монтажу/демонтажу</h3>
+        <h1>ОПОР <span>ОСВЕЩЕНИЯ</span></h1>
+        <a href="/contact">Контакты</a>
+    </div>
+</section>
+<section class="our_services">
+    <div class="container">
+        <h2 class="title">НАШИ УСЛУГИ</h2>
+        <h4>Выполняем работы по монтажу/демонтажу</h4>
+        <p>— высокомачтовых опор освещения</p>
+        <p>— мачт освещения</p>
+        <p>— прожекторных мачт</p>
+        <p>— молниеприемников</p>
+        <p>— флагштоков</p>
+    </div>
+    <img src="{% static '/img/services.png' %}">
+</section>
+<section class="more_ten">
+    <div class="container">
+        <h2 class="title">УЖЕ БОЛЕЕ 10 ЛЕТ ОСВЕЩАЕМ</h2>
+        <h3>крупные площадки</h3>
+        <div class="blocks">
+            <div class="block">
+                <img src="{% static '/img/1.png' %}">
+                <p>СТАДИОНЫ</p>
+            </div>
+            <div class="block">
+                <img src="{% static '/img/2.png' %}">
+                <p>АЭРОПОРТЫ</p>
+            </div>
+            <div class="block">
+                <img src="{% static '/img/3.png' %}">
+                <p>ПАРКОВКИ</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners">
+    <div class="container">
+        <h2 class="title">НАШИ ПАРТНЕРЫ</h2>
+        <div class="partners__list">
+            <img src="{% static '/img/partners/1.png' %}">
+            <img src="{% static '/img/partners/2.png' %}">
+            <img src="{% static '/img/partners/3.png' %}">
+            <img src="{% static '/img/partners/4.png' %}">
+        </div>
+    </div>
+</section>
+{% endblock %}

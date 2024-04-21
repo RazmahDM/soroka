@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="portfolio">
+    <div class="container">
+        <h2 class="title">ПОРТФОЛИО</h2>
+        <div class="portfolio__list">
+            {% for portfolio__item in portfolio %}
+            <div class="portfolio__item">
+                <img src="{{portfolio__item.img.url}}">
+                <p>{{portfolio__item.text}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
